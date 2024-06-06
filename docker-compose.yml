@@ -3,8 +3,8 @@ services:
     image: prom/prometheus:latest
     network_mode: host
     container_name: prometheus
-    ports:
-      - "59090:9090"
+    # ports:
+      # - "59090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus_data:/prometheus
